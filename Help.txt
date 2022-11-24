@@ -1,0 +1,56 @@
+Recuerden usar Bootstrap y Jquerry
+
+Pantallas del proyecto:
+
+- Login (Pantallas: Loguearse, registrarse, olvidó contraseña) con los campos validados tipo texto o numero en caso que lo requiera.
+- Feed (Pantallas: Principal, historial, comunidad, crear viaje)
+- Settings (Pantallas: Configuración, perfil)
+
+
+Abrir terminar de Git Bash:
+
+Abrir la terminar, a la derecha sale una flechita hacia abajo para escoger que terminal usar, escoger "Git Bash" y elminar la que se abre de "PowerShell"
+
+
+Comandos de ayuda:
+
+- Revisar configuracion de cuenta: git config --list
+    (Revisar con "Enter" si sale lineas que dicen: 
+      user.name="Su usuario de GitHub"
+      user.email="Su correo de GitHub" )
+  Se cierra con "ZZ" mayuscula (Doble "z" mayuscula)
+    En caso de que no les salga su nombre y/o email en la lista:
+      git config user.name "usuario"
+      git config user.email "correo"
+    Despues de poner los comandos, revisar de nuevo la lista.
+
+
+Una vez clonado el repositorio y revisar la configuracion de sus perfiles deberán estar en la rama "(main)"
+
+  En caso de que les salga "(Mastes)" usar el siguiente comando:
+    git branch -M main
+
+Despues de verificar que están parados sobre la rama "(main)" van a escoger que parte del proyecto trabajar 
+y dependiendo de las pantallas a realizar crear la rama:
+
+  - Crear rama nueva (Solo se puede hacer desde "(main)". ):
+      git checkout -b "nombre"
+  Una vez creada la rama, puede trabajar en lo que le corresponde.
+
+  - Una vez terminado para subir el código:
+    git add .
+    git commit -m "Descripción de lo que se hizo/agregó"
+    git push
+
+  Una vez subido el código habrá que esperar la revisión y aprovación del código para unirlo al proyecto.
+  Despues de aprobado ( Merge) deberá pasarse para la rama "main" a bajar los cambios en el proyecto y agregar su código:
+  - Moverse a rama main:
+    git checkout main
+
+  - Bajar los cambios en el proyecto y unir codigos:
+    git pull
+
+
+  - Moverse entre ramas:
+      git checkout "name"
+  
