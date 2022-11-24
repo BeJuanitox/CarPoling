@@ -39,10 +39,15 @@ y dependiendo de las pantallas a realizar crear la rama:
 
   - Una vez terminado para subir el código:
     git add .
-    git commit -m "Descripción de lo que se hizo/agregó"
+    git commit -m "Descripción de lo que se hizo/agregó" (La descripcion entre comillas)
     git push
 
-  Una vez subido el código habrá que esperar la revisión y aprovación del código para unirlo al proyecto.
+  Si al hacer el push les sale un mensaje como el que está en la imagen de esta carpeta.
+  Copian esa linea y la pegan de nuevo en la terminar (Esto es necesario la primer vez cada rama).
+
+  Una vez subido el código habrá que ir al repositorio en GitHub y subir el Pull Request y esperar la revisión y 
+  aprovación del código para unirlo al proyecto.
+  
   Despues de aprobado ( Merge) deberá pasarse para la rama "main" a bajar los cambios en el proyecto y agregar su código:
   - Moverse a rama main:
     git checkout main
@@ -51,6 +56,9 @@ y dependiendo de las pantallas a realizar crear la rama:
     git pull
 
 
-  - Moverse entre ramas:
-      git checkout "name"
+- Moverse entre ramas:
+  git checkout "name"
+
+- Eliminar rama:
+  git branch -D "name"
   
