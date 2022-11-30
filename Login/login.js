@@ -1,12 +1,12 @@
-$(document).ready(function () {
+$(document).ready(() => {
 
-  $(`#log`).click(function () {
+  $('#log').click(() => {
 
-    window.open("#", "_self");
+    window.open("/IniciarSesion/sesion.html", "_self");
 
   })
 
-  $(`#registrarse`).click(function () {
+  $('#registrarse').click(() => {
 
     window.open("/Registro/registro.html", "_self");
 

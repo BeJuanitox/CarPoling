@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./nuevoviaje.css">
+  <link rel="icon" href="/img/Logos/favicon.png">
+  <title>Nuevo viaje</title>
+</head>
+
+<body>
+  <header>
+    <div class="headerbar">
+      <i class="fa-solid fa-chevron-left close" id="back"></i>
+      <h1 class="title">Programar nuevo viaje</h1>
+    </div>
+  </header>
+  <div class="crear">
+    <h1 class="secciones">Destinos y horarios</h1>
+    <div class="inputs">
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text blockdatos" id="inputGroup-sizing-sm">Punto de partida</span>
+        <input type="text" class="form-control inputdatos" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="puntopartida">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text blockdatos" id="inputGroup-sizing-sm">Destino</span>
+        <input type="text" class="form-control inputdatos" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm"
+          placeholder="Sede principal Medellín - Politécnico Col. Jaime Isaza Cadavid" disabled="">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text blockdatos" id="inputGroup-sizing-sm">Fecha y hora</span>
+        <input type="datetime-local" class="form-control inputdatos" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="fechaviaje">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text blockdatos" id="inputGroup-sizing-sm">Precio por persona</span>
+        <input type="text" class="form-control inputdatos" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" onkeypress="return solonumeros(event)" onpaste="return false"
+          id="precio">
+      </div>
+    </div>
+    <h1 class="secciones">Puestos disponibles</h1>
+    <div class="asientos">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="puesto1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="puesto2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="puesto3" value="option3">
+        <label class="form-check-label" for="inlineRadio3">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="puesto4" value="option4">
+        <label class="form-check-label" for="inlineRadio3">4</label>
+      </div>
+    </div>
+    <h1 class="secciones">Comentarios</h1>
+    <div class="condiciones">
+      <div class="input-group">
+        <span class="input-group-text blockdatos">Condiciones</span>
+        <textarea class="form-control" aria-label="With textarea" id="tyc"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="saveviaje" id="saveviaje">
+    <i class="btnguardar">Guardar</i>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
+  <script src="./nuevoviaje.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url(/colores.css);
+/* Documento personalizado de CSS */
+
+.isologo {
+    padding: 10px 10px 10px 10px;
+    width: 150px;
+}
+
+.container-fluid-slider {
+    background-color: #F2F2F2;
+}
+
+.titulos-h2 {
+    color: #BF930F;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.titulos-h5 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.texto-banner {
+    text-align: justify;
+}
+
+.banner-image {
+    box-shadow: 0px 0px 10px 2px grey
+}
+
+#Funcionalidades-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#Funcionalidades {
+    color: #735807;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+#AcercaDe-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(/images/home/acercade-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#AcercaDe {
+    font-weight: 600;
+    color: #735807
+}
+
+#AcercaDe-div {
+    width: 600px;
+    height: auto;
+    margin-left: 50px;
+}
+
+#subtitulo-AcercaDe {
+    color: #0D0D0D;
+    font-weight: bold;
+}
+
+#texto-AcercaDe {
+    text-align: justify;
+    padding-bottom: 25px;
+    color: #0D0D0D;
+    font-weight: 400;
+}
+
+.derecha {
+    background-color: #99ceac;
+    height: 100vh;
+    width: 50%;
+}
+
+.izquierda {
+    background: url(/images/home/Mockup_AppAndroid.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+}
+
+#App {
+    display: flex;
+}
+
+.App {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 8rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#App-texto {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+#badges {
+    display: flex;
+}
+
+.PlayStore {
+    background: url(/images/home/google-play-badge.png);
+    margin: auto;
+    padding-top: 10rem;
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100px;
+}
+
+.AppStore {
+    background: url(/images/home/app-store-badge.png);
+    margin: auto;
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100px;
+}
+
+#SobreNosotros-section {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3cpath d='M136.69663967783575 585.0677495854715L207.88249627338539 626.1669230534062 233.93832817751263 498.83855142611435z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M379.02%2c348.356C426.497%2c351.98%2c473.651%2c326.511%2c495.981%2c284.457C517.206%2c244.483%2c504.072%2c196.937%2c479.655%2c158.828C457.371%2c124.048%2c420.314%2c100.907%2c379.02%2c101.91C339.323%2c102.874%2c305.312%2c128.544%2c286.511%2c163.52C268.715%2c196.627%2c272.549%2c235.077%2c289.372%2c268.689C308.549%2c307.006%2c336.296%2c345.095%2c379.02%2c348.356' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1393.2889255099012 54.97462347178586L1328.5046789376952-61.899251133752614 1211.630804332157 2.884995438453302 1276.4150509043627 119.75887004399178z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1488.3080080485472 379.8964617801433L1374.2293156363992 361.8281719294903 1356.161025785746 475.9068643416383 1470.2397181978943 493.97515419229137z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1236.24 245.27 a105.86 105.86 0 1 0 211.72 0 a105.86 105.86 0 1 0 -211.72 0z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M823.83 520.06 a160.6 160.6 0 1 0 321.2 0 a160.6 160.6 0 1 0 -321.2 0z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M940.59 506.72 a106.03 106.03 0 1 0 212.06 0 a106.03 106.03 0 1 0 -212.06 0z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M498.42 34.61 a109.96 109.96 0 1 0 219.92 0 a109.96 109.96 0 1 0 -219.92 0z' fill='rgba(191%2c 147%2c 15%2c 0.32)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+#SobreNosotros {
+    color: #BF930F;
+    margin: auto;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.Nombres {
+    padding-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#info-equipo {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.foto-integrante {
+    box-shadow: 0px 0px 10px 2px grey
+}
+
+.col {
+    padding-top: 50px;
+}
+
+.container-SobreNosotros {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#Isologo_footer {
+    height: 40px;
+}
+
+.iconos-redes {
+    height: 32px;
+    padding-left: 20px;
+}
+
+#pqCarpoling-titulo {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+    padding-top: 2rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#Por-que-CarPoling-section {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(153%2c 206%2c 172%2c 1)'%3e%3c/rect%3e%3cpath d='M -119.4718520699796%2c353 C -23.47%2c301.8 168.53%2c87 360.5281479300204%2c97 C 552.53%2c107 648.53%2c397 840.5281479300204%2c403 C 1032.53%2c409 1128.53%2c123.2 1320.5281479300204%2c127 C 1512.53%2c130.8 1776.63%2c415.6 1800.5281479300204%2c422 C 1824.42%2c428.4 1512.11%2c211.6 1440%2c159' stroke='rgba(255%2c 255%2c 255%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -824.6761066063702%2c326 C -728.68%2c276 -536.68%2c42.8 -344.67610660637024%2c76 C -152.68%2c109.2 -56.68%2c475.6 135.32389339362976%2c492 C 327.32%2c508.4 423.32%2c157.6 615.3238933936298%2c158 C 807.32%2c158.4 930.39%2c503 1095.3238933936298%2c494 C 1260.26%2c485 1371.06%2c189.2 1440%2c113' stroke='rgba(255%2c 255%2c 255%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -13.314767644993822%2c327 C 82.69%2c290.8 274.69%2c118 466.6852323550062%2c146 C 658.69%2c174 754.69%2c475.4 946.6852323550062%2c467 C 1138.69%2c458.6 1234.69%2c128.8 1426.685232355006%2c104 C 1618.69%2c79.2 1904.02%2c318.2 1906.685232355006%2c343 C 1909.35%2c367.8 1533.34%2c251 1440%2c228' stroke='rgba(255%2c 255%2c 255%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -947.9247238959473%2c231 C -851.92%2c280 -659.92%2c488.2 -467.9247238959473%2c476 C -275.92%2c463.8 -179.92%2c193.8 12.075276104052705%2c170 C 204.08%2c146.2 300.08%2c359 492.0752761040527%2c357 C 684.08%2c355 782.49%2c158.2 972.0752761040527%2c160 C 1161.66%2c161.8 1346.42%2c324.8 1440%2c366' stroke='rgba(255%2c 255%2c 255%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -295.23935483547257%2c479 C -199.24%2c438.4 -7.24%2c289.4 184.7606451645274%2c276 C 376.76%2c262.6 472.76%2c440.4 664.7606451645274%2c412 C 856.76%2c383.6 952.76%2c154.8 1144.7606451645274%2c134 C 1336.76%2c113.2 1565.71%2c309.8 1624.7606451645274%2c308 C 1683.81%2c306.2 1476.95%2c161.6 1440%2c125' stroke='rgba(255%2c 255%2c 255%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.pqCarpoling-h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 40px;
+    color: #735807;
+}
+
+.list-group {
+    padding-bottom: 3rem;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#contacto-section {
+    height: 90vh;
+}
+
+
+.contact {
+    padding: 4%;
+    height: 400px;
+}
+
+.col-md-3 {
+    background: #99ceac;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 15%;
+}
+
+.col-md-9 {
+    background: #fff;
+    padding: 2%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    margin-top: 25px;
+    background: #735807;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
+
+.boton-reestablecer {
+    margin-top: 25px;
+    background: #735807;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+.dirigirlogin {
+    margin-left: 45.5%;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 50px;
+    background: var(--bg-verde);
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dirigirlogin:hover {
+    transition: all 250ms;
+    transform: scale(1.2);
+    color: black;
+    cursor: pointer;
+  }
+  
+  .btndirigirlogin {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .btndirigirlogin:hover {
+    text-decoration: none;
+    color: black;
+  }

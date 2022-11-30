@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./profile.css">
+  <link rel="icon" href="/img/Logos/favicon.png">
+  <title>Perfil</title>
+</head>
+
+<body>
+  <header>
+    <div class="headerbar">
+      <i class="fa-solid fa-chevron-left close" id="close" ></i>
+      <h1 class="title">Mi cuenta</h1>
+    </div>
+    <img class="profile" src="/img/User.png" alt="profile">
+  </header>
+  <div class="container">
+    <h2 class="description">Modo usuario</h2>
+    <div class="usermode">
+      <div class="btnOption" id="pasajero">
+        <i class="option">Pasajero</i>
+      </div>
+      <div class="btnOption" id="conductor">
+        <i class="option">Conductor</i>
+      </div>
+    </div>
+    <h2 class="description">Información</h2>
+    <section class="info">
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Nombres</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="nombre">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Apellidos</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="apellido">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Correo universitario</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="email">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Carrera universitaria</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="carrera">
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Número de contacto</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="celular">
+      </div>
+      <div class="input-group mb-3 datos">
+        <label class="input-group-text" for="inputGroupSelect01">¿Tiene vehículo?</label>
+        <select class="form-select" id="vehiculo">
+          <option value="no">No</option>
+          <option value="si">Si</option>
+        </select>
+      </div>
+      <div class="input-group mb-3 datos">
+        <label class="input-group-text" for="inputGroupSelect01">Tipo de vehículo</label>
+        <select class="form-select" id="tipovehiculo" disabled="">
+          <option value="carro">Carro</option>
+          <option value="moto">Moto</option>
+        </select>
+      </div>
+      <div class="input-group input-group-sm mb-3 datos">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Placa</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-sm" id="placa" disabled="">
+      </div>
+  </div>
+  <div class="save" id="save">
+    <i class="btnsave">Guardar</i>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
+  <script src="./profile.js"></script>
+</body>
+
+</html>
