@@ -1,0 +1,44 @@
+@import url(/colores.css);
+
+header {
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  background: var(--bg-verde);
+  border: 1px solid black;
+}
+
+.imgtyc {
+  width: 180px;
+  height: 107px;
+}
+
+body {
+  margin: 0;
+  background: #E5E5E5;
+}
+
+.section {
+  margin: 50px 15px 0 15px;
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.span {
+  font-weight: 400;
+}
+
+.ultimop {
+  margin-bottom: 50px;
+}

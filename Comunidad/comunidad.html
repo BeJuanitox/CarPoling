@@ -8,9 +8,9 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="feedstyle.css">
+  <link rel="stylesheet" href="comunidad.css">
   <link rel="icon" href="/img/Logos/favicon.png">
-  <title>Inicio</title>
+  <title>Comunidad</title>
 </head>
 
 <body>
@@ -55,8 +55,8 @@
 
     <!-- -------------- -->
     <div class="menuzonas">
-      <a class="zona" href="#" id="inicio">Inicio</a>
-      <a class="zona" href="/Comunidad/comunidad.html" id="comunidad">Comunidad</a>
+      <a class="zona" href="/Feed/feed.html" id="inicio">Inicio</a>
+      <a class="zona" href="#" id="comunidad">Comunidad</a>
     </div>
     <div class="profile">
       <a class="image" href="/Profile/profile.html">
@@ -65,35 +65,25 @@
     </div>
   </header>
 
-  <div class="feed">
-    <h1 class="title">¡Bienvenido/a a CarPoling!</h1>
+  <div class="comunidadcontainer">
     <input class="search" type="text" placeholder="Buscar">
-    <h2 class="sections">Rutas</h2>
-    <section class="rutas">
+    <h2 class="title">Anuncios</h2>
+    <div class="btn">
+      <div class="crearanuncio" id="crearanuncio">
+        <i class="btncrearanuncio">Nuevo anuncio</i>
+      </div>
+    </div>
+    <section class="publicaciones">
       <div class="card">
         <div class="encabezado">
-          <div class="infoconductor">
-            <img class="imagenconductor" src="/images/home/Sebastian.webp" alt="Perfil">
-            <h1 class="nombre">Juan Sebastian Morales Cano</h1>
-          </div>
-          <div class="destinoviaje">
-            <h2 class="destinos"> <b>Desde: </b>Itagüi - Parque principal</h2>
-            <p class="condiciones"> <b>Condiciones: </b>Prohibido fumar en el vehículo.</p>
-            <p class="precio"> <b class="moneda">$</b>2500<b> | </b>Puestos disponibles:<b> 1</b>.</p>
-          </div>
-        </div>
-        <h1 class="masinfo">Más información</h1>
-        <div class="containermasinfo">
-          <div class="infovehiculo">
-            <p><b>Mercedes-Benz SLS AMG</b></p>
-            <p><b>Modelo: </b>2022</p>
-            <p><b>Placa: </b>MOR100</p>
-            <p><b>Color: </b>Gris</p>
-          </div>
-          <img class="parque" src="/img/ParqueItagui.png" alt="Parque Itagüi">
+          <img class="imagenusuario" src="/images/home/Sebastian.webp" alt="Perfil">
+          <h1 class="nombre">Juan Sebastian Morales Cano</h1>    
+        </div>      
+        <div class="mensaje">
+          <p>Hola, ¿Quién pasa por el parque de Sabaneta el miercoles a las 12 P.M. hacia el Poli?</p>
         </div>
         <div class="contacto">
-          <div class="btnContacto" id="btnContacto">
+          <div class="btnContacto">
             <i class="fa-brands fa-whatsapp iconwsp"></i>
             <i class="titulocontacto">Contacto</i>
           </div>
@@ -106,7 +96,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
-  <script src="feed.js"></script>
+  <script src="comunidad.js"></script>
 </body>
 
 </html>

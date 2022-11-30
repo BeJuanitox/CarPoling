@@ -1,21 +1,65 @@
 $(document).ready(() => {
 
-  $(`#enviar`).click(() => {
+  const nombre = sessionStorage.getItem("nombre");
+  const apellido = sessionStorage.getItem("apellido");
+  const email = sessionStorage.getItem("email");
+  const carrera = sessionStorage.getItem("carrera");
+  const celular = sessionStorage.getItem("celular");
+  const vehiculo = sessionStorage.getItem("vehiculo");
+  const tipovehiculo = sessionStorage.getItem("tipovehiculo");
+  const placa = sessionStorage.getItem("placa");
+
+  let modousuario = 1;
+
+  $(`#conductor`).click(() => {
+    modousuario = 2;
+  })
+
+  $(`#close`).click(() => {
+    if (modousuario === 2) {
+      window.open("/Conductor/feedconductor.html", "_self");
+    } else {
+      window.open("/Feed/feed.html", "_self");
+    }
+
+  })
+
+  $(`#vehiculo`).change(() => {
+    const vehiculo = $(`#vehiculo`).val()
+    if (vehiculo === "si") {
+      $(`#tipovehiculo`).removeAttr("disabled", "");
+      $(`#placa`).removeAttr("disabled", "");
+
+    } else {
+      $(`#tipovehiculo`).attr("disabled", true);
+      $(`#placa`).attr("disabled", true);
+    }
+  })
+
+  $("#nombre").val(nombre);
+  $("#apellido").val(apellido);
+  $("#email").val(email);
+  $("#carrera").val(carrera);
+  $("#celular").val(celular);
+  $("#vehiculo").val(vehiculo);
+  $("#tipovehiculo").val(tipovehiculo);
+  $("#placa").val(placa);
+
+  $(`#save`).click(() => {
+
     const nombre = $(`#nombre`).val()
     const apellido = $(`#apellido`).val()
     const email = $(`#email`).val()
     const carrera = $(`#carrera`).val()
     const celular = $(`#celular`).val()
-    const password = $(`#password`).val()
-    const rpassword = $(`#rpassword`).val()
+    const tipovehiculo = $(`#tipovehiculo`).val()
+    const placa = $(`#placa`).val()
+    const vehiculo = $(`#vehiculo`).val()
 
-
-    if (nombre == "" || apellido == "" || email == "" || carrera == "" || celular == "" || password == "" || rpassword == "") {
+    if (nombre == "" || apellido == "" || email == "" || carrera == "" || celular == "") {
       alert("Dejaste un campo vacio.")
-    } else if (password != rpassword) {
-      alert("Las contraseñas no coinciden");
     } else if (!validarCorreo(email)) {
-      alert("Por favor, ingrese un correo con dominio valido.\n Recuerde que sólo está disponible para el Poli JIC")
+      alert("Por favor, ingrese un correo valido.")
       return false;
     } else {
 
@@ -26,22 +70,26 @@ $(document).ready(() => {
         sessionStorage.setItem("email", email);
         sessionStorage.setItem("carrera", carrera);
         sessionStorage.setItem("celular", celular);
-        sessionStorage.setItem("password", password);
+        sessionStorage.setItem("vehiculo", vehiculo);
+        sessionStorage.setItem("tipovehiculo", tipovehiculo);
+        sessionStorage.setItem("placa", placa);
 
         $("#name").val("");
         $("#apellido").val("");
         $("#email").val("");
         $("#carrera").val("");
         $("#celular").val("");
-        $("#password").val("");
+        $("#vehiculo").val("");
+        $("#tipovehiculo").val("");
+        $("#placa").val("");
 
       } else {
         alert("No es compatible en este navegador.")
       }
 
-      window.open("/Feed/feed.html", "_self");
-
     }
+
+    document.location.href = "profile.html";
 
   })
 
@@ -55,6 +103,7 @@ function validarCorreo(email) {
 
 //Validación letras (Nombre y Apellido)
 function sololetras(e) {
+  console.log(e);
   key = e.keyCode || e.which;
 
   teclado = String.fromCharCode(key).toLowerCase();

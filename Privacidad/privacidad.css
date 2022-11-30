@@ -1,0 +1,32 @@
+@import url(/colores.css);
+
+header {
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  background: var(--bg-verde);
+  border: 1px solid black;
+}
+
+.imgprivacidad {
+  width: 150px;
+  height: 120px;
+}
+
+body {
+  margin: 0;
+  background: #E5E5E5;
+}
+
+.capitulos {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.fuenteoscura {
+  font-weight: 400;
+}
