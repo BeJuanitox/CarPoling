@@ -8,7 +8,7 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="feedstyle.css">
+  <link rel="stylesheet" href="./feedstyle.css">
   <link rel="icon" href="/img/Logos/favicon.png">
   <title>Inicio</title>
 </head>
@@ -60,7 +60,7 @@
     </div>
     <div class="profile">
       <a class="image" href="/Profile/profile.html">
-        <img class="imageprofile" src="/img/User.png" alt="Perfil">
+        <img class="imageprofile" src="../img/User.png" alt="Perfil">
       </a>
     </div>
   </header>
@@ -70,35 +70,7 @@
     <input class="search" type="text" placeholder="Buscar">
     <h2 class="sections">Rutas</h2>
     <section class="rutas">
-      <div class="card">
-        <div class="encabezado">
-          <div class="infoconductor">
-            <img class="imagenconductor" src="/images/home/Sebastian.webp" alt="Perfil">
-            <h1 class="nombre">Juan Sebastian Morales Cano</h1>
-          </div>
-          <div class="destinoviaje">
-            <h2 class="destinos"> <b>Desde: </b>Itagüi - Parque principal</h2>
-            <p class="condiciones"> <b>Condiciones: </b>Prohibido fumar en el vehículo.</p>
-            <p class="precio"> <b class="moneda">$</b>2500<b> | </b>Puestos disponibles:<b> 1</b>.</p>
-          </div>
-        </div>
-        <h1 class="masinfo">Más información</h1>
-        <div class="containermasinfo">
-          <div class="infovehiculo">
-            <p><b>Mercedes-Benz SLS AMG</b></p>
-            <p><b>Modelo: </b>2022</p>
-            <p><b>Placa: </b>MOR100</p>
-            <p><b>Color: </b>Gris</p>
-          </div>
-          <img class="parque" src="/img/ParqueItagui.png" alt="Parque Itagüi">
-        </div>
-        <div class="contacto">
-          <div class="btnContacto" id="btnContacto">
-            <i class="fa-brands fa-whatsapp iconwsp"></i>
-            <i class="titulocontacto">Contacto</i>
-          </div>
-        </div>
-      </div>
+      <div class="cards" id="cards"></div>
     </section>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
