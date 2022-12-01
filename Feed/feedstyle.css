@@ -1,4 +1,4 @@
-@import url(/colores.css);
+@import url(../colores.css);
 
 header {
   width: 100%;
@@ -312,4 +312,10 @@ body {
   font-weight: 400;
   margin-left: 15px;
   color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
