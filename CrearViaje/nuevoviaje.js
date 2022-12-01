@@ -31,17 +31,35 @@ $(document).ready(() => {
   })
 
   $('#saveviaje').click(() => {
+    let travelArr = [];
     const puntopartida = $('#puntopartida').val()
     const precio = $('#precio').val()
     const tyc = $('#tyc').val()    
     const fechaviaje = $('#fechaviaje').val();
 
-    sessionStorage.setItem("puntopartida", puntopartida);
-    sessionStorage.setItem("fechaviaje", fechaviaje);
-    sessionStorage.setItem("precio", precio);
-    sessionStorage.setItem("tyc", tyc);
-    sessionStorage.setItem("numpuesto", numpuesto);
+    if('travelList' in sessionStorage) {
+      travelArr = JSON.parse(sessionStorage.getItem('travelList'));
+    }
 
+    const travelInfo = {
+      img: '../img/User.png',
+      name: 'Juan Sebastian Morales Cano',
+      from: puntopartida,
+      rules: tyc,
+      price: +precio,
+      availableSeats: numpuesto,
+      carInfo: {
+        brand: 'Mercedes-Benz SLS AMG',
+        model: '2022',
+        idCar: 'MOR100',
+        color: 'Gris'
+      },
+      fromImg: '../img/ParqueItagui.png'
+    };
+
+    travelArr.push(travelInfo);
+
+    sessionStorage.setItem('travelList', JSON.stringify(travelArr));
     $("#puntopartida").val("");
     $("#fechaviaje").val("");
     $("#precio").val("");
@@ -49,7 +67,7 @@ $(document).ready(() => {
     $("#numpuesto").val("");
 
     window.open("/Conductor/feedconductor.html", "_self"); //Crear viaje
-
+    // http://127.0.0.1:5500/CarPoling/Feed/feed.html
   })
 
 })
