@@ -1,4 +1,4 @@
-@import url(/colores.css);
+@import url(../colores.css);
 
 header {
   width: 100%;
@@ -13,7 +13,7 @@ header {
 }
 
 body {
-  background: url(/img/Backgrounds/PasilloSegundo.png);
+  background: url(../img/Backgrounds/PasilloSegundo.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -199,13 +199,6 @@ body {
   color: black;
 }
 
-.btn {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .crearanuncio {
   width: 300px;
   height: 60px;
@@ -217,15 +210,77 @@ body {
   justify-content: center;
 }
 
-.crearanuncio:hover {
-  cursor: pointer;
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+  cursor: default;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-modal:checked ~ .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor {
+  width: 400px;
+  height: 225px;
+  margin: auto;
+  background: #E1E1E1;
+  box-shadow: 1px 7px 25px rgb(0, 0, 0, 0.6);
+  transition: all 500ms ease;
+  transform: translateY(-30%);
+}
+
+#btn-modal:checked ~ .modal .contenedor {  
+  transform: translateY(0%);
+}
+
+.contenedor header {
+  height: 50px;
+  padding: 10px;
+  background: var(--bg-verde);
   color: black;
 }
 
-.btncrearanuncio {
-  font-size: 20px;
-  color: black;
+.contenedor label {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 15px;
   font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+#btn-modal {
+  display: none;
+}
+
+.lbl-modal {
+  margin-left: 47%;
+  background: var(--bg-verde);
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contenido {
+  padding: 15px;
+}
+
+#publicaranuncio {
+  margin-top: 5px;
+  margin-left: 43%;
 }
 
 .publicaciones {
@@ -239,21 +294,21 @@ body {
   margin-bottom: 150px;
 }
 
-.card {
+.cardanuncio {
   text-align: center;
   width: 500px;
   margin: 20px auto;
   border-radius: 10px;
   padding: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  background-color: solid white;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.card:hover {
+.cardanuncio:hover {
   box-shadow: rgba(227, 16, 16, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
@@ -288,6 +343,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .contacto {

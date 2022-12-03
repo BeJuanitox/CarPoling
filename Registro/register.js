@@ -39,7 +39,7 @@ $(document).ready(() => {
         alert("No es compatible en este navegador.")
       }
 
-      window.open("/Feed/feed.html", "_self");
+      window.open("../Feed/feed.html", "_self");
 
     }
 

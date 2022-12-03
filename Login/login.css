@@ -1,7 +1,7 @@
-@import url(/colores.css);
+@import url(../colores.css);
 
 body {
-  background: url(/img/Backgrounds/AmigosCarro\ 1.png);
+  background: url(../img/Backgrounds/AmigosCarro\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

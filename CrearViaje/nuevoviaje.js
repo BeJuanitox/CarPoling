@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
   $('#back').click(() => {
-    window.open("/Conductor/feedconductor.html", "_self");
+    window.open("../Conductor/feedconductor.html", "_self");
   })
 
   $('#fecha').change(() => {
@@ -31,43 +31,67 @@ $(document).ready(() => {
   })
 
   $('#saveviaje').click(() => {
-    let travelArr = [];
-    const puntopartida = $('#puntopartida').val()
-    const precio = $('#precio').val()
-    const tyc = $('#tyc').val()    
-    const fechaviaje = $('#fechaviaje').val();
 
-    if('travelList' in sessionStorage) {
-      travelArr = JSON.parse(sessionStorage.getItem('travelList'));
+    const username = sessionStorage.getItem('nombre');
+    const namecar = sessionStorage.getItem('nombrevehiculo');
+    const modelcar = sessionStorage.getItem('modelo');
+    const colorcar = sessionStorage.getItem('colorvehiculo');
+    const platecar = sessionStorage.getItem('placa');
+
+    if (namecar == null || modelcar == null || colorcar == null || platecar == null) {
+      alert("Te faltan datos para crear un viaje. \n Por favor revisa tu perfil y completa los datos");
+      window.open("../Profile/profile.html", "_self");
+    } else {
+      const puntopartida = $('#puntopartida').val()
+      const fechaviaje = $('#fechaviaje').val()
+      const precio = $('#precio').val()
+      const tyc = $('#tyc').val()
+
+      if (puntopartida == null || fechaviaje == null || precio == null || tyc == null || numpuesto == 0) {
+        alert("Te faltó un fato, por favor llenar todos los datos.");
+      } else {
+        let travelArr = [];
+
+        if ('travelList' in sessionStorage) {
+          travelArr = JSON.parse(sessionStorage.getItem('travelList'));
+        }
+
+        const travelInfo = {
+          img: '../img/User.png',
+          name: username,
+          from: puntopartida,
+          rules: tyc,
+          price: +precio,
+          availableSeats: numpuesto,
+          date: fechaviaje,
+          carInfo: {
+            brand: namecar,
+            model: modelcar,
+            idCar: platecar,
+            color: colorcar
+          },
+          fromImg: '../img/ParqueItagui.png'
+        };
+
+        travelArr.push(travelInfo);
+
+        sessionStorage.setItem('travelList', JSON.stringify(travelArr));
+        $("#puntopartida").val("");
+        $("#fechaviaje").val("");
+        $("#precio").val("");
+        $("#tyc").val("");
+        $("#numpuesto").val("");
+        $("#fechaviaje").val("");
+        $('username').val("");
+        $('namecar').val("");
+        $('modelcar').val("");
+        $('colorcar').val("");
+        $('platecar').val("");
+
+        window.open("../Conductor/feedconductor.html", "_self");
+      }
     }
 
-    const travelInfo = {
-      img: '../img/User.png',
-      name: 'Juan Sebastian Morales Cano',
-      from: puntopartida,
-      rules: tyc,
-      price: +precio,
-      availableSeats: numpuesto,
-      carInfo: {
-        brand: 'Mercedes-Benz SLS AMG',
-        model: '2022',
-        idCar: 'MOR100',
-        color: 'Gris'
-      },
-      fromImg: '../img/ParqueItagui.png'
-    };
-
-    travelArr.push(travelInfo);
-
-    sessionStorage.setItem('travelList', JSON.stringify(travelArr));
-    $("#puntopartida").val("");
-    $("#fechaviaje").val("");
-    $("#precio").val("");
-    $("#tyc").val("");
-    $("#numpuesto").val("");
-
-    window.open("/Conductor/feedconductor.html", "_self"); //Crear viaje
-    // http://127.0.0.1:5500/CarPoling/Feed/feed.html
   })
 
 })
@@ -127,11 +151,3 @@ FechaActual = () => {
   }
 
 }
-
-// const anioProgramado = parseInt(String($('#fecha').val()).substring(0, 4));
-// const mesProgramado = parseInt(String($('#fecha').val()).substring(5, 7));
-// const diaProgramado = parseInt(String($('#fecha').val()).substring(8, 10));
-// const horaProgramado = parseInt(String($('#fecha').val()).substring(11, 13));
-// const minutoProgramado = parseInt(String($('#fecha').val()).substring(14, 16));
-// const fechaProgramada = anioProgramado + "/" + mesProgramado + "/" + diaProgramado + " - " + horaProgramado + ":" + minutoProgramado;
-// console.log(fechaProgramada);

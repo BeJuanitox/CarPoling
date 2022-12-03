@@ -14,7 +14,7 @@ $(document).ready(() => {
     console.log("Arriba password");
 
     if (emaillogin == emailsesion && passwordlogin == passwordsesion) {
-      window.open("/Feed/feed.html", "_self");
+      window.open("../Feed/feed.html", "_self");
     } else {
       alert("Correo o contraseña incorecto, por favor verifique los datos ingresados y vuelva a intentarlo.")
     }

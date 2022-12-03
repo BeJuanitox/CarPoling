@@ -8,29 +8,22 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="comunidad.css">
-  <link rel="icon" href="/img/Logos/favicon.png">
+  <link rel="stylesheet" href="../Comunidad/comunidad.css">
+  <link rel="icon" href="../img/Logos/favicon.png">
   <title>Comunidad</title>
 </head>
 
 <body>
   <header>
-    <!-- <div class="icon">
-      <i class="fa-sharp fa-solid fa-sliders setting"></i>
-    </div> -->
-
     <nav role="navigation">
       <div class="menuToggle">
         <input class="toggle" type="checkbox">
-
-
         <span class="bar1"></span>
         <span class="bar2"></span>
         <span class="bar3"></span>
-
         <h1 class="header">Ajustes</h1>
         <ul class="menu">
-          <a class="option" href="/Privacidad/privacidad.html" target="_blank">
+          <a class="option" href="../Privacidad/privacidad.html" target="_blank">
             <li class="item">Privacidad</li>
           </a>
           <a class="option" href="https://wa.link/m1kks9" target="_blank">
@@ -39,53 +32,62 @@
           <a class="option" href="#">
             <li class="item">Preguntas frecuentes</li>
           </a>
-          <a class="option" href="/Privacidad/TyC.html" target="_blank">
+          <a class="option" href="../Privacidad/TyC.html" target="_blank">
             <li class="item">Terminos y condiciones</li>
           </a>
-          <a class="option" href="/landing.html" target="_blank">
+          <a class="option" href="../landing.html" target="_blank">
             <li class="item">Acerca de</li>
           </a>
-          <a class="option cerrarsesion" href="/Login/login.html">
+          <a class="option cerrarsesion" href="../Login/login.html">
             <li class="item">Cerrar sesión</li>
           </a>
         </ul>
 
       </div>
     </nav>
-
     <!-- -------------- -->
     <div class="menuzonas">
       <a class="zona" href="/Feed/feed.html" id="inicio">Inicio</a>
       <a class="zona" href="#" id="comunidad">Comunidad</a>
     </div>
     <div class="profile">
-      <a class="image" href="/Profile/profile.html">
-        <img class="imageprofile" src="/img/User.png" alt="Perfil">
+      <a class="image" href="../Profile/profile.html">
+        <img class="imageprofile" src="../img/User.png" alt="Perfil">
       </a>
     </div>
   </header>
-
   <div class="comunidadcontainer">
     <input class="search" type="text" placeholder="Buscar">
     <h2 class="title">Anuncios</h2>
-    <div class="btn">
-      <div class="crearanuncio" id="crearanuncio">
+    
+      <!-- <div class="crearanuncio" id="crearanuncio">
         <i class="btncrearanuncio">Nuevo anuncio</i>
+      </div> -->
+      <input type="checkbox" id="btn-modal">
+      <label for="btn-modal" class="lbl-modal">Nuevo anuncio</label>
+      <div class="modal">
+        <div class="contenedor">
+          <header>Nuevo anuncio</header>
+          <label for="btn-modal">X</label>
+          <div class="contenido">
+            <textarea class="form-control textarea" aria-label="With textarea" id="admensajeescrito"></textarea>
+          </div>
+          <button type="button" class="btn btn-success" id="publicaranuncio">Success</button>
+        </div>
       </div>
-    </div>
-    <section class="publicaciones">
-      <div class="card">
+    <section class="publicaciones" id="anuncio-template">
+      <div class="cardanuncio">
         <div class="encabezado">
-          <img class="imagenusuario" src="/images/home/Sebastian.webp" alt="Perfil">
-          <h1 class="nombre">Juan Sebastian Morales Cano</h1>    
-        </div>      
+          <img class="imagenusuario" src="../images/home/Sebastian.webp" alt="Perfil">
+          <h1 class="nombre" id="adnombreusuario">Juan Sebastian Morales Cano</h1>
+        </div>
         <div class="mensaje">
           <p>Hola, ¿Quién pasa por el parque de Sabaneta el miercoles a las 12 P.M. hacia el Poli?</p>
         </div>
         <div class="contacto">
           <div class="btnContacto">
             <i class="fa-brands fa-whatsapp iconwsp"></i>
-            <i class="titulocontacto">Contacto</i>
+            <i class="titulocontacto" id="adnumerousuario">Contacto</i>
           </div>
         </div>
       </div>
@@ -96,7 +98,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
-  <script src="comunidad.js"></script>
+  <script src="../Comunidad/comunidad.js"></script>
 </body>
 
 </html>

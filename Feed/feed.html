@@ -8,8 +8,8 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./feedstyle.css">
-  <link rel="icon" href="/img/Logos/favicon.png">
+  <link rel="stylesheet" href="../Feed/feedstyle.css">
+  <link rel="icon" href="../img/Logos/favicon.png">
   <title>Inicio</title>
 </head>
 
@@ -30,22 +30,22 @@
 
         <h1 class="header">Ajustes</h1>
         <ul class="menu">
-          <a class="option" href="/Privacidad/privacidad.html" target="_blank">
+          <a class="option" href="../Privacidad/privacidad.html" target="_blank">
             <li class="item">Privacidad</li>
           </a>
           <a class="option" href="https://wa.link/m1kks9" target="_blank">
             <li class="item">Contactanos</li>
           </a>
-          <a class="option" href="#">
+          <a class="option" href="../Privacidad/FAQ.html" target="_blank">
             <li class="item">Preguntas frecuentes</li>
           </a>
-          <a class="option" href="/Privacidad/TyC.html" target="_blank">
+          <a class="option" href="../Privacidad/TyC.html" target="_blank">
             <li class="item">Terminos y condiciones</li>
           </a>
-          <a class="option" href="/landing.html" target="_blank">
+          <a class="option" href="../landing.html" target="_blank">
             <li class="item">Acerca de</li>
           </a>
-          <a class="option cerrarsesion" href="/Login/login.html">
+          <a class="option cerrarsesion" href="../Login/login.html">
             <li class="item">Cerrar sesión</li>
           </a>
         </ul>
@@ -56,21 +56,49 @@
     <!-- -------------- -->
     <div class="menuzonas">
       <a class="zona" href="#" id="inicio">Inicio</a>
-      <a class="zona" href="/Comunidad/comunidad.html" id="comunidad">Comunidad</a>
+      <a class="zona" href="../Comunidad/comunidad.html" id="comunidad">Comunidad</a>
     </div>
     <div class="profile">
-      <a class="image" href="/Profile/profile.html">
+      <a class="image" href="../Profile/profile.html">
         <img class="imageprofile" src="../img/User.png" alt="Perfil">
       </a>
     </div>
   </header>
-
+  
   <div class="feed">
     <h1 class="title">¡Bienvenido/a a CarPoling!</h1>
     <input class="search" type="text" placeholder="Buscar">
     <h2 class="sections">Rutas</h2>
-    <section class="rutas">
-      <div class="cards" id="cards"></div>
+    <section class="rutas" id="viajes-template">
+      <div class="card">
+        <div class="info">
+          <div class="encabezado">
+            <div class="infoconductor">
+              <img class="imagenconductor" src="/images/home/Sebastian.webp" alt="Perfil">
+              <h1 class="nombre">Juan Sebastian Morales Cano</h1>
+            </div>
+            <div class="destinoviaje">
+              <h2>2022/12/16 - 12:00</h2>
+              <h2 class="destinos"> <b>Desde: </b>Itagüi - Parque principal</h2>
+              <p class="precio"> <b class="moneda">$</b>3000<b> | </b>Puestos disponibles:<b> 1</b>.</p>
+            </div>
+          </div>
+          <h1 class="masinfo">Más información</h1>
+          <div class="containermasinfo">
+              <p class="infocarro"><b>Mercedes-Benz SLS AMG</b></p>
+              <p class="infocarro"><b>Modelo: </b>2022</p>
+              <p class="infocarro"><b>Placa: </b>MOR100</p>
+              <p class="infocarro"><b>Color: </b>Gris</p>
+          </div>
+          <p class="condiciones"> <b>Condiciones: </b>Prohibido fumar en el vehículo.</p>
+          <div class="contacto">
+            <div class="btnContacto" id="btnContacto">
+              <i class="fa-brands fa-whatsapp iconwsp"></i>
+              <i class="titulocontacto">Contacto</i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -78,7 +106,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://kit.fontawesome.com/7851ea6f75.js" crossorigin="anonymous"></script>
-  <script src="feed.js"></script>
+  <script src="../Feed/feed.js"></script>
 </body>
 
 </html>

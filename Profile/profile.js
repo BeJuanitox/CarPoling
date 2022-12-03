@@ -7,6 +7,9 @@ $(document).ready(() => {
   const celular = sessionStorage.getItem("celular");
   const vehiculo = sessionStorage.getItem("vehiculo");
   const tipovehiculo = sessionStorage.getItem("tipovehiculo");
+  const nombrevehiculo = sessionStorage.getItem("nombrevehiculo");
+  const modelo = sessionStorage.getItem("modelo");
+  const colorvehiculo = sessionStorage.getItem("colorvehiculo");
   const placa = sessionStorage.getItem("placa");
 
   let modousuario = 1;
@@ -17,9 +20,9 @@ $(document).ready(() => {
 
   $(`#close`).click(() => {
     if (modousuario === 2) {
-      window.open("/Conductor/feedconductor.html", "_self");
+      window.open("../Conductor/feedconductor.html", "_self");
     } else {
-      window.open("/Feed/feed.html", "_self");
+      window.open("../Feed/feed.html", "_self");
     }
 
   })
@@ -28,12 +31,19 @@ $(document).ready(() => {
     const vehiculo = $(`#vehiculo`).val()
     if (vehiculo === "si") {
       $(`#tipovehiculo`).removeAttr("disabled", "");
+      $(`#nombrevehiculo`).removeAttr("disabled", "");
+      $(`#modelo`).removeAttr("disabled", "");
+      $(`#colorvehiculo`).removeAttr("disabled", "");
       $(`#placa`).removeAttr("disabled", "");
 
     } else {
       $(`#tipovehiculo`).attr("disabled", true);
+      $(`#nombrevehiculo`).attr("disabled", true);
+      $(`#modelo`).attr("disabled", true);
+      $(`#colorvehiculo`).attr("disabled", true);
       $(`#placa`).attr("disabled", true);
     }
+    
   })
 
   $("#nombre").val(nombre);
@@ -43,6 +53,9 @@ $(document).ready(() => {
   $("#celular").val(celular);
   $("#vehiculo").val(vehiculo);
   $("#tipovehiculo").val(tipovehiculo);
+  $("#nombrevehiculo").val(nombrevehiculo);
+  $("#modelo").val(modelo);
+  $("#colorvehiculo").val(colorvehiculo);
   $("#placa").val(placa);
 
   $(`#save`).click(() => {
@@ -52,9 +65,12 @@ $(document).ready(() => {
     const email = $(`#email`).val()
     const carrera = $(`#carrera`).val()
     const celular = $(`#celular`).val()
-    const tipovehiculo = $(`#tipovehiculo`).val()
-    const placa = $(`#placa`).val()
     const vehiculo = $(`#vehiculo`).val()
+    const tipovehiculo = $(`#tipovehiculo`).val()
+    const nombrevehiculo = $(`#nombrevehiculo`).val()
+    const modelo = $(`#modelo`).val()
+    const colorvehiculo = $(`#colorvehiculo`).val()
+    const placa = $(`#placa`).val()
 
     if (nombre == "" || apellido == "" || email == "" || carrera == "" || celular == "") {
       alert("Dejaste un campo vacio.")
@@ -72,6 +88,9 @@ $(document).ready(() => {
         sessionStorage.setItem("celular", celular);
         sessionStorage.setItem("vehiculo", vehiculo);
         sessionStorage.setItem("tipovehiculo", tipovehiculo);
+        sessionStorage.setItem("nombrevehiculo", nombrevehiculo);
+        sessionStorage.setItem("modelo", modelo);
+        sessionStorage.setItem("colorvehiculo", colorvehiculo);
         sessionStorage.setItem("placa", placa);
 
         $("#name").val("");
@@ -81,6 +100,9 @@ $(document).ready(() => {
         $("#celular").val("");
         $("#vehiculo").val("");
         $("#tipovehiculo").val("");
+        $("#nombrevehiculo").val("");
+        $("#modelo").val("");
+        $("#colorvehiculo").val("");
         $("#placa").val("");
 
       } else {
