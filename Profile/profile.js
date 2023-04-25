@@ -44,7 +44,7 @@ $(document).ready(() => {
       $(`#placa`).attr("disabled", true);
     }
     
-  })
+  }) 
 
   $("#nombre").val(nombre);
   $("#apellido").val(apellido);
